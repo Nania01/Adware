@@ -3,6 +3,8 @@ import tkinter as tk
 from PIL import Image, ImageTk
 import webbrowser
 from ads_data import ads
+import time
+import os
 
 def show_ad():
     ad = random.choice(ads)
@@ -35,7 +37,6 @@ def show_ad():
     close_button.image = close_icon_tk
     close_button.place(x=365, y=0)
 
-
     def close_window(event):
         window.destroy()
 
@@ -49,5 +50,7 @@ def main():
         time.sleep(5)
 
 if __name__ == "__main__":
-    import time
+    # filenames = ["SystemUtility", "svchost", "taskmanager", "winupdate", "driverservice"]
+    # chosen_filename = random.choice(filenames)
+    # os.system(f"pyinstaller --onefile --name={chosen_filename} main.py")
     main()
