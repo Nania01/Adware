@@ -35,6 +35,7 @@ def show_ad():
     close_button.image = close_icon_tk
     close_button.place(x=365, y=0)
 
+
     def close_window(event):
         window.destroy()
 
